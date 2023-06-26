@@ -15,7 +15,7 @@ function isAlpha(field) {
 
 function isAlphaNumeric(field) {
     return function(obj, res) {
-        if("/^[a-z]+$/i".test(obj[field]))
+        if("/^[a-z0-9]+$/i".test(obj[field]))
             res[field] = "Ammessi solo caratteri alfanumerici.";
     }
 }
