@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <dialog class="modal termini-condizioni">
+        <div>
+            <h1>Termini e Condizioni</h1>
+            <form method="dialog">
+                <button>X</button>
+            </form>
+        </div>
+        <p>
+            Registrazione: L'iscrizione al corso è aperta a tutte le persone interessate che soddisfano i requisiti di ammissione. La registrazione al corso sarà considerata completata solo dopo che il pagamento dell'iscrizione è stato ricevuto dalla società organizzatrice.
+            Requisiti di ammissione: Per partecipare al corso, i partecipanti devono avere una conoscenza di base della programmazione e della matematica, e in particolare della statistica. Inoltre, i partecipanti devono essere in grado di parlare e scrivere in inglese.
+            Pagamento: Il pagamento dell'iscrizione deve essere effettuato entro la data di scadenza indicata nel modulo di registrazione. Il costo del corso sarà specificato nel modulo di registrazione e potrà variare in base alla sede del corso e alla durata del corso stesso. Il pagamento può essere effettuato tramite carta di credito, bonifico bancario o altre modalità di pagamento accettate dalla società organizzatrice.
+            Annullamento: In caso di annullamento della registrazione da parte del partecipante, la società organizzatrice non rimborserà alcuna parte dell'importo pagato.
+            Diritti di proprietà intellettuale: Tutti i contenuti didattici e i materiali del corso sono protetti da diritti di proprietà intellettuale e sono di esclusiva proprietà della società organizzatrice. L'accesso ai materiali del corso è consentito esclusivamente ai partecipanti al corso, e non deve essere condiviso con terzi senza il consenso scritto della società organizzatrice.
+            Riservatezza: La società organizzatrice si impegna a proteggere la privacy dei dati personali dei partecipanti, che saranno utilizzati esclusivamente per la gestione del corso e per l'invio di eventuali informazioni riguardanti il corso stesso. La società organizzatrice non condividerà i dati personali dei partecipanti con terzi senza il loro consenso.
+            Legge applicabile: I presenti termini e condizioni sono regolati dalla legge italiana, e qualsiasi controversia derivante da essi sarà di competenza esclusiva dei tribunali italiani.
+            Accettando i presenti termini e condizioni, il partecipante dichiara di aver letto e compreso le condizioni di registrazione al corso di informatica sul machine learning, e di accettarle integralmente.
+        </p>
+    </dialog>
+    <h1>Form per iscrizione al corso</h1>
+    <div>
+        * Campi obbligatori
+        <form name="form-iscrizione" method="post">
+            <div>
+                <label for="nome">*Nome</label>
+                <input name="nome" id="nome" type="text">
+            </div>
+            <div>
+                <label for="cognome">*Cognome</label>
+                <input name="cognome" id="cognome" type="text">
+            </div>
+            <div>
+                <label for="genere">*Genere</label>
+                <select name="genere" id="genere">
+                    <option selected="selected">-- Seleziona --</option>
+                    <option>Maschio</option>
+                    <option>Femmina</option>
+                    <option>Altro</option>
+                </select>
+            </div>
+            <div>
+                <label for="password">*Password</label>
+                <input nome="password" type="password">
+            </div>
+            <div>
+                <div>
+                    <input nome="termini-condizioni" id="termini-condizioni" type="checkbox">
+                    <label for="termini-condizioni">*Accetto Termini e Condizioni<button>!</button></label>
+                </div>
+                <div>
+                    <input nome="newsletter" id="newsletter" type="checkbox">
+                    <label for="newsletter">Acconsento a ricevere notizie su offerte e promozioni future</label>
+                </div>
+            </div>
+            <button type="submit">Iscriviti</button>
+        </form>
+    </div>
+    <div>
+        <p>
+            Impara le basi del machine learning in solo 3 mesi con il nostro corso!
+        </p>
+        <p>
+            Passando l'esame finale potrai certificare le tue competenze ed ottenere un attestato.        
+        </p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
