@@ -1,4 +1,25 @@
 const form = document.forms["form-iscrizione"];
+let dialog = undefined;
+
+dialog = document.querySelector('dialog');
+
+document.addEventListener("DOMContentLoaded", ()=>{
+	dialog = document.querySelector('dialog');
+	document.querySelector(".help-icon").addEventListener("click", toggleDialog);
+})
+
+function toggleDialog() {
+	if(!dialog) {
+		alert("Dialog non trovato");
+		return;
+	}
+	if(dialog.open) {
+		dialog.close();
+	} else {
+		dialog.showModal();
+	}
+}
+
 form.addEventListener('submit', (event) => {
     
     // stop form submission
@@ -19,3 +40,4 @@ function isAlphaNumeric(field) {
             res[field] = "Ammessi solo caratteri alfanumerici.";
     }
 }
+

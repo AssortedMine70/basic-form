@@ -89,10 +89,17 @@ input, select {
 }
 
 .header {
-	background-color: var(--color-accent);
 	border-radius: 1rem 1rem 0 0;
 	display: flex;
 	justify-content: space-between;
+}
+
+.info .header {
+	background-color: var(--color-accent);
+}
+
+dialog .header {
+	background-color: #86A3AB;
 }
 
 label.info {
@@ -105,15 +112,54 @@ label.info {
 	background-color: transparent;
 }
 
-label.close {
+label.help {
+	background-image: url("help-circle.svg");
+	width: 3rem;
+	height: 3rem;
+	display: block;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+label.close, button.close {
 	background-image: url("x.svg");
 	width: 3rem;
 	height: 3rem;
 	display: block;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-color: #6A6E5A;
 	border-top-right-radius: 1rem;
+	border: 0;
+}
+
+.info label.close {
+	background-color: #6A6E5A;
+}
+
+dialog button.close {
+	background-color: #638892;
+}
+
+dialog button.close:focus {
+	outline: none;
+}
+
+.help-icon {
+	background-image: url("help-circle.svg");
+	width: 1rem;
+	height: 1rem;
+	display: inline-block;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border-radius: 50%;
+}
+
+.help-icon:hover {
+	cursor: pointer;
+	background-color: #0006;
 }
 
 input#info:not(:checked) ~ .content {
@@ -135,4 +181,15 @@ input#info:not(:checked) ~ .header .close {
 
 .hidden {
 	display: none;
+}
+
+dialog {
+	padding: 0;
+	border: 0;
+	border-radius: 1rem;
+	max-width: 50%;
+}
+
+dialog .content {
+	padding: 0.5rem;
 }
